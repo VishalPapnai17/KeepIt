@@ -1,0 +1,45 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated out  put.
+  In production mode the html minifcation is enabled by default  .
+  If you are not generating a valid html output please disable   it manually.
+  You can do so by adding the following setting to your HtmlWeb  packPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options f  or details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <link font-family: "Montserrat", sans-serif;
+      href="https://fonts.googleapis.com/css?family=McLaren|Mon  tserrat&display=swap"
+      rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div id="root"></div>
+      <script src="../src/index.js" type="text/jsx"></script>
+    <script>!function(e){function r(r){for(var n,u,a=r[0],i=r[1  ],l=r[2],c=0,s=[];c<a.length;c++)u=a[c],Object.prototype.hasO  wnProperty.call(o,u)&&o[u]&&s.push(o[u][0]),o[u]=0;for(n in i  )Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(f  &&f(r);s.length;)s.shift()();return p.push.apply(p,l||[]),t()  }function t(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=  !0,a=1;a<t.length;a++){var i=t[a];0!==o[i]&&(n=!1)}n&&(p.spli  ce(r--,1),e=u(u.s=t[0]))}return e}var n={},o={1:0},p=[];funct  ion u(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exp  orts:{}};return e[r].call(t.exports,t,t.exports,u),t.l=!0,t.e  xports}u.m=e,u.c=n,u.d=function(e,r,t){u.o(e,r)||Object.defin  eProperty(e,r,{enumerable:!0,get:t})},u.r=function(e){"undefi  ned"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProper  ty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProper  ty(e,"__esModule",{value:!0})},u.t=function(e,r){if(1&r&&(e=u  (e)),8&r)return e;if(4&r&&"object"===typeof e&&e&&e.__esModul  e)return e;var t=Object.create(null);if(u.r(t),Object.defineP  roperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=t  ypeof e)for(var n in e)u.d(t,n,function(r){return e[r]}.bind(  null,n));return t},u.n=function(e){var r=e&&e.__esModule?func  tion(){return e.default}:function(){return e};return u.d(r,"a  ",r),r},u.o=function(e,r){return Object.prototype.hasOwnPrope  rty.call(e,r)},u.p="/KeepIt/";var a=this["webpackJsonpkeeper-  app-part-1-starting"]=this["webpackJsonpkeeper-app-part-1-sta  rting"]||[],i=a.push.bind(a);a.push=r,a=a.slice();for(var l=0  ;l<a.length;l++)r(a[l]);var f=i;t()}([]);
+  //# sourceMappingURL=runtime-main.a8e9b999.js.map</script><sc  ript src="/KeepIt/static/js/2.b435221b.chunk.js"></script><sc  ript src="/KeepIt/static/js/main.d648f13c.chunk.js"></script>  </body>
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [KeepIt]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [KeepIt]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [KeepIt]/[html-minifier-terser]/src/htmlminifier.js:1354:16  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [KeepIt]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [KeepIt]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [KeepIt]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues.js:93 processTicksAndRejections
+    internal/process/task_queues.js:93:5
+  
+</pre>

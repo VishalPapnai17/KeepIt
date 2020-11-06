@@ -1,5 +1,5 @@
 {
-  "homepage": "https://VishalPapnai17.github.io/KeepIt",
+  "homepage": "http://VishalPapnai17.github.io/KeepIt",
   "name": "keeper-app-part-1-starting",
   "version": "1.0.0",
   "description": "",
@@ -8,6 +8,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "html-webpack-plugin": "^4.5.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "^4.0.0"
